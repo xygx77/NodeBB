@@ -497,6 +497,7 @@ ActivityPub.send = async (type, id, targets, payload) => {
 						type,
 						attempts: 1,
 						timestamp: nextTryOn,
+						digest,
 						payload: JSON.stringify(payload),
 					}]);
 				}
